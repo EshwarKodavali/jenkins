@@ -27,6 +27,11 @@ pipeline {
                     echo $COURSE
                     env
                     sleep 10
+                    echo "Hello ${params.PERSON}"
+                    echo "Biography: ${params.BIOGRAPHY}"
+                    echo "Toggle: ${params.DEPLOY}"
+                    echo "Choice: ${params.CHOICE}"
+                    echo "Password: ${params.PASSWORD}"
                     """
                 }
             }
